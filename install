@@ -1,0 +1,20 @@
+#!/bin/bash
+mkdir /tmp/g || echo "Please remove the contents of /tmp/g" && exit
+cd /tmp/g
+#GCL
+git clone https://github.com/czipperz/gcl
+cd gcl
+./install
+cd ..
+
+#GD
+gcl czipperz/gd
+cd gd
+./install
+cd ..
+
+#GC
+gcl czipperz/gc
+cd gc
+./install
+cd ..
