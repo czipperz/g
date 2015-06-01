@@ -7,6 +7,11 @@ cd gcl
 ./install
 cd ..
 
+returnText=$(cat $HOME/.config/gcl)
+if [ ! $returnText == "https://github.com/" ]; then
+	echo "https://github.com/" > $HOME/.config/gcl
+fi
+
 #GD
 gcl czipperz/gd
 cd gd
@@ -18,3 +23,11 @@ gcl czipperz/gc
 cd gc
 ./install
 cd ..
+
+#GR
+gcl czipperz/gr
+cd gr
+./install
+cd ..
+
+echo "$returnText" > $HOME/.config/gcl
