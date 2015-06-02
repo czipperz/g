@@ -8,9 +8,7 @@ cd gcl
 cd ..
 
 returnText=$(cat $HOME/.config/gcl)
-if [ ! $returnText == "https://github.com/" ]; then
-	echo "https://github.com/" > $HOME/.config/gcl
-fi
+[ $returnText == "https://github.com/" ] || echo "https://github.com/" > $HOME/.config/gcl
 
 #GD
 gcl czipperz/gd
