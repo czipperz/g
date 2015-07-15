@@ -13,9 +13,6 @@ cd /tmp/g/gcl
 ./install
 cd /tmp/g
 
-returnText=$(cat $HOME/.config/gcl)
-[ $returnText == "https://github.com/" ] || echo "https://github.com/" > $HOME/.config/gcl
-
 #GD
 gcl czipperz/gd /tmp/g/gd
 cd /tmp/g/gd
