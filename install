@@ -6,6 +6,7 @@ else
 	mkdir /tmp/g
 fi
 cd /tmp/g
+
 #GCL
 git clone https://github.com/czipperz/gcl /tmp/g/gcl
 cd /tmp/g/gcl
