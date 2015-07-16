@@ -28,6 +28,8 @@ cd /tmp/g
 gcl czipperz/gr /tmp/g/gr
 cd /tmp/g/gr
 ./install
-cd /tmp/g
+
+cd /tmp
+rm -Rf g
 
 echo "$returnText" > $HOME/.config/gcl
