@@ -2,9 +2,8 @@
 if [ -d /tmp/g ]; then
 	echo "Please remove the contents of /tmp/g"
 	exit 1
-else
-	mkdir /tmp/g
 fi
+mkdir /tmp/g
 cd /tmp/g
 
 #GCL
